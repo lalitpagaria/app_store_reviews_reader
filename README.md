@@ -1,3 +1,21 @@
+<p align="center">
+    <a href="https://github.com/lalitpagaria/app_store_reviews_reader/blob/master/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/lalitpagaria/app_store_reviews_reader?color=blue">
+    </a>
+    <a href="https://pypi.org/project/app-store-reviews-reader">
+        <img src="https://img.shields.io/pypi/pyversions/app-store-reviews-reader" alt="PyPI - Python Version" />
+    </a>
+    <a href="https://pypi.org/project/app-store-reviews-reader/">
+        <img alt="Release" src="https://img.shields.io/pypi/v/app-store-reviews-reader">
+    </a>
+    <a href="https://pepy.tech/project/app-store-reviews-reader">
+        <img src="https://pepy.tech/badge/app-store-reviews-reader/month" alt="Downloads" />
+    </a>
+    <a href="https://github.com/lalitpagaria/app_store_reviews_reader/commits/master">
+        <img alt="Last commit" src="https://img.shields.io/github/last-commit/lalitpagaria/app_store_reviews_reader">
+    </a>
+</p>
+
 # App store reviews reader
 To fetch app store reviews from publicly available RSS feeds.
 
