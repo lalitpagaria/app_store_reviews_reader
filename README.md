@@ -91,4 +91,8 @@ class Review:
     vote_count: Optional[int] = 0
     vote_sum: Optional[int] = 0
 ```
-
+The output is given with UTF-8 charsets, if you are scraping non-english App Store set the environment to use UTF -
+```shell
+export LANG=en_US.UTF-8
+export PYTHONIOENCODING=utf-8
+```
