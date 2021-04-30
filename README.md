@@ -5,6 +5,12 @@
     <a href="https://pypi.org/project/app-store-reviews-reader">
         <img src="https://img.shields.io/pypi/pyversions/app-store-reviews-reader" alt="PyPI - Python Version" />
     </a>
+    <a href="https://anaconda.org/lalitpagaria/app-store-reviews-reader">
+        <img src="https://anaconda.org/lalitpagaria/app-store-reviews-reader/badges/version.svg" alt="Conda" />
+    </a>
+    <a href="https://anaconda.org/lalitpagaria/app-store-reviews-reader">
+        <img src="https://anaconda.org/lalitpagaria/app-store-reviews-reader/badges/downloads.svg" alt="Downloads" />
+    </a>
     <a href="https://pypi.org/project/app-store-reviews-reader/">
         <img alt="Release" src="https://img.shields.io/pypi/v/app-store-reviews-reader">
     </a>

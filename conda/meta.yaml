@@ -1,0 +1,42 @@
+{% set name = "app-store-reviews-reader" %}
+{% set data = load_setup_py_data() %}
+
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ data['version'] }}"
+
+source:
+  path: ..
+
+build:
+  number: 0
+  script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record=record.txt"
+
+requirements:
+  build:
+    - python
+    - feedparser
+    - requests
+  run:
+    - python
+    - feedparser
+    - requests
+
+test:
+  requires:
+    - pytest
+
+about:
+  home: "{{ data[ 'url' ] }}"
+  license: "{{ data[ 'license' ] }}"
+  license_file: LICENSE
+  summary: "{{ data[ 'description' ] }}"
+  description: "{{ data[ 'description' ] }}"
+  dev_url: "{{ data[ 'url' ] }}"
+  doc_url: "{{ data[ 'url' ] }}"
+  doc_source_url: https://github.com/lalitpagaria/app_store_reviews_reader/blob/master/README.md
+
+extra:
+  recipe-maintainers:
+    - lalitpagaria

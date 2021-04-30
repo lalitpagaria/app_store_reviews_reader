@@ -43,7 +43,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="app-store-reviews-reader",
-    version="1.0",
+    version="1.1",
     author="Lalit Pagaria",
     author_email="pagaria.lalit@gmail.com",
     description="To fetch app store reviews from publicly available RSS feeds",
