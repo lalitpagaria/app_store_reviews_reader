@@ -35,6 +35,7 @@ class AppStoreReviewsReader:
 
     def fetch_reviews(self, after: Optional[datetime] = None, since_id: Optional[int] = None) -> List[Review]:
         feed_url = BASE_RSS_URL.format(country=self.country, app_id=self.app_id)
+        last_url: Optional[str] = None
         has_next: bool = True
         reviews: List[Review] = []
         while has_next:
@@ -43,10 +44,14 @@ class AppStoreReviewsReader:
 
             if feed.feed.links is not None:
                 for link in feed.feed.links:
+                    if link.get('rel', '') == 'last':
+                        last_url = link.href
                     if link.get('rel', '') == 'next':
                         feed_url = link.href
                         has_next = True
-                        break
+
+                if feed_url == last_url:
+                    has_next = False
 
             for entry in feed.entries:
                 if after is not None and after.timetuple() > entry.updated_parsed:
