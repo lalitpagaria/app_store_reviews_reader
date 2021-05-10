@@ -29,7 +29,7 @@ App store provide RSS feed as follows -
 ```shell
 https://itunes.apple.com/{country}/rss/customerreviews/id={app_id}/xml
 ```
-It provide feed in `xml` and `json` format but `xml` feed have more information like `review_id` and `vote_count` etc. Hence `xml` feed is used along with `feedparser` to parse feed.
+It provides feed in `xml` and `json` format but `xml` feed have more information like `review_id` and `vote_count` etc. Hence `xml` feed is used along with `feedparser` to parse feed.
 
 ## Installation
 
